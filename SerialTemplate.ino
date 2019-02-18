@@ -8,7 +8,7 @@
 
 #include <Arduino.h>
 
-#define SERIAL_RATE 115200;
+#define SERIAL_RATE 115200
 
 // Globals
 bool enableDebug = true;
@@ -25,7 +25,7 @@ void initSerial() {
 }
 
 void showCreator() {
-    printLn("Created by: Duncan \"duncte123\" Sterken")
+    printLn("Created by: Duncan \"duncte123\" Sterken");
 }
 
 void setup() {
