@@ -9,14 +9,14 @@
 #include <Arduino.h>
 
 #define SERIAL_RATE 115200
+#define ENABLE_DEBUG true
 
 // Globals
-bool enableDebug = true;
 
 void printLn(String a_inputString) {
-    if (enableDebug) {
-        Serial.println(a_inputString);
-    }
+#if ENABLE_DEBUG
+    Serial.println(a_inputString);
+#endif
 }
 
 void initSerial() {
